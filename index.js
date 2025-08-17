@@ -175,7 +175,7 @@ function createEmbed(description, color = 0x5865F2, title = null) {
     const embed = new EmbedBuilder()
         .setColor(color)
         .setDescription(description)
-        .setFooter({ text: 'Shiko FM • música sem limites' });
+        .setFooter({ text: 'dsadwadsa • música sem limites' });
     
     if (title) embed.setTitle(title);
     return embed;
@@ -335,7 +335,7 @@ async function playSong(guild, song) {
             .setTitle('🎶 Tocando Agora')
             .setDescription(`**[${song.title}](${song.url})**`)
             .setThumbnail(song.thumbnail || null)
-            .setFooter({ text: `🎧 Pedido por ${song.requestedBy} • Shiko FM` });
+            .setFooter({ text: `🎧 Pedido por ${song.requestedBy} • sdwdedsa` });
 
         const row = new ActionRowBuilder().addComponents(
             new ButtonBuilder().setCustomId('music_pause').setLabel('⏸ Pausar').setStyle(ButtonStyle.Secondary),
@@ -492,7 +492,7 @@ client.once(Events.ClientReady, async () => {
         client.user.setActivity({
             name: statusMessages[index % statusMessages.length],
             type: ActivityType.Streaming,
-            url: 'https://twitch.tv/shikolive'
+            url: 'https://twitch.tv/dsadsaas'
         });
         index++;
     }, 30000);
