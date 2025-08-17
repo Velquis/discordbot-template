@@ -1,4 +1,4 @@
-# 🎵 DISCORD BOT TEMPLATE
+# DISCORD BOT TEMPLATE
 *"Bot open-source feito com Node.js e amor (às vezes ódio) por JavaScript, btw i'm brazilian so the archives on the bot are some comments from me saying in portuguese"*  
 
 <div align="center">
@@ -24,49 +24,77 @@
 
 ---
 
-## 🎛️ **Technologies**  
-- **Principal Library**:
+## 🎛️ **Technologies**
 
-  ![Discord.js](https://img.shields.io/badge/-discord.js@14-FFE4E1?logo=discord) - interaction with discord API  
-  ![Voice](https://img.shields.io/badge/-@discordjs/voice-FFE4E1?logo=spotify) - Music System  
-  ![Play-dl](https://img.shields.io/badge/-play--dl-FFE4E1?logo=youtube&logoColor=black) - Youtube Streaming (links/names/playlists)  
-  ![MySQL](https://img.shields.io/badge/-MySQL-FFE4E1?logo=mysql&logoColor=black) (Server configs)  
-
----
-
-## 🎯 **Commands (Slash Commands)**  
-
-### 🔧 **Admin**  
-![Ban](https://img.shields.io/badge/-/ban_@user_[reason]-FFE4E1) - Ban someone with reason (or not)  
-![Kick](https://img.shields.io/badge/-/kick_@user-FFE4E1) - Kick someone  
-![Clear](https://img.shields.io/badge/-/clear_quantidade-FFE4E1) - Clean messages from the chat you chose  
-
-### 🎶 **Music (YouTube)**  
-![Play](https://img.shields.io/badge/-/play-FFE4E1?logo=youtube&logoColor=black) - search musics with links/name/playlists  
-![Pause](https://img.shields.io/badge/-/pause-FFE4E1) - Pauses the music  
-![Queue](https://img.shields.io/badge/-/queue-FFE4E1) - Show all the music on the queue  
-![Skip](https://img.shields.io/badge/-/skip-FFE4E1) - Skips the music  
-![Resume](https://img.shields.io/badge/-/resume-FFE4E1) - Continues to music  
-
-### 📻 **General**  
-![Vexy](https://img.shields.io/badge/-/vexy-FFE4E1) - command about the creator  
-![Help](https://img.shields.io/badge/-/help-FFE4E1) - show all the commands that are avalible  
-
-### 💻 **Secrets**  
-![Reactions](https://img.shields.io/badge/-random_reactions-FFE4E1) - this will react your messages randomly on any time (this are costumizable, time and emojis too)  
+| Library | Description |
+|---------|-------------|
+| ![Discord.js](https://img.shields.io/badge/-discord.js@14-FFE4E1?logo=discord) | Interaction with Discord API |
+| ![Voice](https://img.shields.io/badge/-@discordjs/voice-FFE4E1?logo=spotify) | Music system |
+| ![Play-dl](https://img.shields.io/badge/-play--dl-FFE4E1?logo=youtube&logoColor=black) | YouTube streaming (links/names/playlists) |
+| ![MySQL](https://img.shields.io/badge/-MySQL-FFE4E1?logo=mysql&logoColor=black) | Server configurations |
 
 ---
+
+## 🎯 **Commands (Slash Commands)**
+
+### 🔧 **Admin**
+
+| Command | Description |
+|---------|-------------|
+| ![Ban](https://img.shields.io/badge/-ban_@user_[reason]-FFE4E1) | Ban someone with a reason (or not) |
+| ![Kick](https://img.shields.io/badge/-kick_@user-FFE4E1) | Kick someone |
+| ![Clear](https://img.shields.io/badge/-clear_quantity-FFE4E1) | Delete messages from the selected chat |
+
+### 🎶 **Music (YouTube)**
+
+| Command | Description |
+|---------|-------------|
+| ![Resume](https://img.shields.io/badge/-resume-FFE4E1) | Resume the music |
+| ![Play](https://img.shields.io/badge/-play-FFE4E1) | Search music using links/names/playlists |
+| ![Pause](https://img.shields.io/badge/-pause-FFE4E1) | Pause the music |
+| ![Queue](https://img.shields.io/badge/-queue-FFE4E1) | Show all music in the queue |
+| ![Skip](https://img.shields.io/badge/-skip-FFE4E1) | Skip the current music |
+
+### 📻 **General**
+
+| Command | Description |
+|---------|-------------|
+| ![Vexy](https://img.shields.io/badge/-vexy-FFE4E1) | Command about the creator |
+| ![Help](https://img.shields.io/badge/-help-FFE4E1) | Show all available commands |
+
+### 💻 **Secrets**
+
+| Command | Description |
+|---------|-------------|
+| ![Reactions](https://img.shields.io/badge/-random_reactions-FFE4E1) | Randomly reacts to your messages at any time (customizable emojis and timing) |
 
 ## 📳 **Install**  
-1. **Necessary Conditions**:  
+1. **Requirements**:
+
    ![Node](https://img.shields.io/badge/-Node.js_v22+-68A063?logo=node.js&logoColor=white)  
    ![FFmpeg](https://img.shields.io/badge/-FFmpeg-007808?logo=ffmpeg) (`sudo apt install ffmpeg` on Linux)  
 
-2. **Configs**:  
-   ```bash
-   git clone https://github.com/Velquis/discordbot-template.git
-   cd discordbot-template
-   npm install
-   cp .env.example .env
-   # Edit the .env archive to your own bot
-   node .
+2. **Setup**:  
+```bash
+  git clone https://github.com/Velquis/discordbot-template.git
+  cd discordbot-template
+  npm install
+  cp .env.example .env
+  # Edit the .env file with your bot's credentials
+  node .
+```
+   
+3. **.env Configuration**:  
+   After copying `.env.example` to `.env`, you need to fill in the environment variables:
+   
+```bash
+- `DISCORD_TOKEN=` (your bot token here)
+- `CLIENT_ID=` (your client ID if needed — recommended to leave empty or use your own)
+- `SPOTIFY_CLIENT_ID=` (leave empty!)
+- `SPOTIFY_CLIENT_SECRET=` (leave empty!)
+- `SPOTIFY_REDIRECT_URI=` (leave empty!)
+- `YTDLP_EXEC_PATH=` (path to your `yt-dlp.exe` — for now, this feature requires manual installation of yt-dlp and setting its system path on your machine)
+```
+
+   ⚠️ Make sure to keep sensitive data like your token private and never share your `.env` file publicly.
+
