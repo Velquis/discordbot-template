@@ -76,24 +76,24 @@
 
 2. **Setup**:  
 ```bash
-  git clone https://github.com/Velquis/discordbot-template.git
-  cd discordbot-template
-  npm install
-  cp .env.example .env
-  # Edit the .env file with your bot's credentials
-  node .
+ git clone https://github.com/Velquis/discordbot-template.git
+ cd discordbot-template
+ npm install
+ cp .env.example .env
+ Edit the .env file with your bot's credentials
+ node .
 ```
    
 3. **.env Configuration**:  
    After copying `.env.example` to `.env`, you need to fill in the environment variables:
    
 ```bash
-- `DISCORD_TOKEN=` (your bot token here)
-- `CLIENT_ID=` (your client ID if needed — recommended to leave empty or use your own)
-- `SPOTIFY_CLIENT_ID=` (leave empty!)
-- `SPOTIFY_CLIENT_SECRET=` (leave empty!)
-- `SPOTIFY_REDIRECT_URI=` (leave empty!)
-- `YTDLP_EXEC_PATH=` (path to your `yt-dlp.exe` — for now, this feature requires manual installation of yt-dlp and setting its system path on your machine)
+ DISCORD_TOKEN= (your bot token here)
+ CLIENT_ID= (your client ID if needed — recommended to leave empty or use your own)
+ SPOTIFY_CLIENT_ID= (leave empty!)
+ SPOTIFY_CLIENT_SECRET= (leave empty!)
+ SPOTIFY_REDIRECT_URI= (leave empty!)
+ YTDLP_EXEC_PATH= (path to your `yt-dlp.exe` — for now, this feature requires manual installation of yt-dlp and setting its system path on your machine)
 ```
 
    ⚠️ Make sure to keep sensitive data like your token private and never share your `.env` file publicly.
