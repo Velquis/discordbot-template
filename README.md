@@ -47,7 +47,6 @@
 
 | Command | Description |
 |---------|-------------|
-| ![Vexy](https://img.shields.io/badge/-vexy-FFE4E1) | Command about the creator |
 | ![Help](https://img.shields.io/badge/-help-FFE4E1) | Show all available commands |
 
 ### 💻 **Secrets**
